@@ -1,4 +1,4 @@
-# APiRest hecha en spring boot
+# APiRest hecho en Spring Boot
 
 ## Esta es un Api rest desarrollado en java con el framework Sring Boot
 
