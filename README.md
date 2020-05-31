@@ -25,14 +25,14 @@ direcciones:
 
 5. Post: http://localhost:8080/eemployees/create
 
-ejemplo de post: 
-    {
-        "name": "Yonatan",
-        "lastName": "Cuervo",
-        "documentId": "1234567",
-        "birthDate": "1992-05-31",
-        "joiningDateCompany": "2020-05-01",
-        "position": "developer",
-        "wage": 2350000
-    }
+ejemplo de post:   
+    {    
+        "name": "Yonatan",  
+        "lastName": "Cuervo",  
+        "documentId": "1234567",  
+        "birthDate": "1992-05-31",  
+        "joiningDateCompany": "2020-05-01",  
+        "position": "developer",  
+        "wage": 2350000  
+    }  
 
