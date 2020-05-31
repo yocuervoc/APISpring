@@ -53,7 +53,7 @@ public class EmployeeRest {
 		
 		System.out.println(employee.getBirthDate());
 		LocalDate today = LocalDate.now(); 
-		LocalDate birthDay = LocalDate.of(employee.getBirthDate().get(Calendar.YEAR), employee.getBirthDate().get(Calendar.MONTH), employee.getBirthDate().get(Calendar.DAY_OF_MONTH)); 
+		LocalDate birthDay = LocalDate.of(employee.getBirthDate().get(Calendar.YEAR), employee.getBirthDate().get(Calendar.MONTH)+1, employee.getBirthDate().get(Calendar.DAY_OF_MONTH)); 
 		Period age = Period.between(birthDay, today);
 		
 		System.out.println(age);
