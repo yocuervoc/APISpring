@@ -6,6 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import java.util.Calendar;
 
 
 @Entity
@@ -17,16 +21,24 @@ public class Employee {
 	private Long id;
 	@Column(name= "name", nullable= false, length=20)
 	private String name;
+	
 	@Column(name = "LastName", nullable= false, length=30)
 	private String LastName;
+	
 	@Column(name="documentId", nullable = false, length=30)
 	private String documentId;
+	
 	@Column(name="birthDate", nullable = false)
-	private String birthDate;
+	@Temporal(TemporalType.DATE)
+	private Calendar birthDate;
+	
 	@Column(name="joiningDateCompany", nullable = false)
-	private String joiningDateCompany;
+	@Temporal(TemporalType.DATE)
+	private Calendar joiningDateCompany;
+	
 	@Column(name="position", nullable = false)
 	private String position;
+	
 	@Column(name="wage", nullable = false)
 	private double wage;
 	
@@ -55,16 +67,16 @@ public class Employee {
 	public void setDocumentId(String documentId) {
 		this.documentId = documentId;
 	}
-	public String getBirthDate() {
+	public Calendar getBirthDate() {
 		return birthDate;
 	}
-	public void setBirthDate(String birthDate) {
+	public void setBirthDate(Calendar birthDate) {
 		this.birthDate = birthDate;
 	}
-	public String getJoiningDateCompany() {
+	public Calendar getJoiningDateCompany() {
 		return joiningDateCompany;
 	}
-	public void setJoiningDateCompany(String joiningDateCompany) {
+	public void setJoiningDateCompany(Calendar joiningDateCompany) {
 		this.joiningDateCompany = joiningDateCompany;
 	}
 	public String getPosition() {

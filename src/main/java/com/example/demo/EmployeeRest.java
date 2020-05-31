@@ -19,7 +19,7 @@ public class EmployeeRest {
 	}
 	@RequestMapping(value="yonatan", method = RequestMethod.GET)
 	public ResponseEntity<List<Employee>> getEmployee(){
-		
-		return ResponseEntity.ok();
+		return null;
+		//return ResponseEntity.ok();
 	}
 }
