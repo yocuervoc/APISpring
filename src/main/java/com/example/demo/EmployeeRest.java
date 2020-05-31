@@ -26,12 +26,6 @@ public class EmployeeRest {
 	@Autowired //esto es una injeccion de dependencia
 	private EmployeeDAO employeeDAO;
 	
-	
-	//@GetMapping
-	@RequestMapping(value="hello", method = RequestMethod.GET)
-	public String hello() {
-		return "hello world";
-	}
 	@GetMapping
 	//@RequestMapping(value="employees", method = RequestMethod.GET)
 	public ResponseEntity<List<Employee>> getEmployee(){
