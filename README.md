@@ -1,6 +1,6 @@
 # APiRest hecha en spring boot
 
-##Esta es un Api rest desarrollado en java con el framework Sring Boot
+## Esta es un Api rest desarrollado en java con el framework Sring Boot
 
 
 Para delplegar el proyecto es necesario tener un instalado java JDK y Mysql
@@ -18,7 +18,7 @@ La coneccion a la base de datos se realiza con:
 direcciones:
 1. Get: http://localhost:8080/employees
 
-2. Get: /employees/{employeesId}
+2. Get: http://localhost:8080/employees/{employeesId}
 
 3. Post: http://localhost:8080/eemployees/create
 
