@@ -27,7 +27,7 @@ public class Employee {
 	private String joiningDateCompany;
 	@Column(name="position", nullable = false)
 	private String position;
-	
+	@Column(name="wage", nullable = false)
 	private double wage;
 	
 	
